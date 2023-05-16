@@ -1,0 +1,19 @@
+Part 1: Short Answer Questions
+1.What is client-side and server-side in web development, and what is the main difference between the two?
+Ans:Client-side and server-side are two terms used to describe the different parts of a web application. Client-side refers to the code and data that is stored on the user's computer, while server-side refers to the code and data that is stored on the web server. The main difference between the two is that client-side code is executed on the user's computer, while server-side code is executed on the web server.
+
+2.What is an HTTP request and what are the different types of HTTP requests?
+Ans:An HTTP request is a message that is sent from a client to a server. It is used to request a resource, such as a web page, from the server. The different types of HTTP requests are:
+    GET: Used to request a resource from the server.
+    POST: Used to send data to the server.
+    PUT: Used to update a resource on the server.
+    DELETE: Used to delete a resource from the server.
+
+3.What is JSON and what is it commonly used for in web development?
+Ans:JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy to read and write for humans and machines. JSON is commonly used in web development to transmit data between the client and server.
+
+4.What is a middleware in web development, and give an example of how it can be used.
+Ans:A middleware is a piece of code that is executed between the client and server. It is used to handle common tasks, such as authentication, authorization, and error handling. Middleware can be used to improve the performance and security of a web application.
+
+5.What is a controller in web development, and what is its role in the MVC architecture?
+Ans: A controller in web development is a component that handles requests from the client and directs them to the appropriate component to handle the request. The controller is responsible for routing requests, validating input, and invoking actions. In the MVC architecture, the controller is responsible for mediating between the model and the view.
