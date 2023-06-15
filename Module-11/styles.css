@@ -1,15 +1,13 @@
 
-
-
-  :root {
+:root {
     --main-color: blue;
     --container-bg: lightgray;
     --table-bg: white;
     --table-border-color: black;
     --hover-bg: lightblue;
     --first-li-color: red;
-    --image-width: 250px;
-    --image-height: 150px;
+    --image-width: 350px;
+    --image-height: 200px;
     --first-column-bg: lightyellow;
     --last-row-bg: lightgreen;
     --header-bg: darkgray;
@@ -40,11 +38,9 @@
   
   .container {
     background-color: var(--container-bg);
-    width: 500px;
+    width: 600px;
     margin: auto;
-    padding: var(--padding);
-    background-color: #ddd;
-    
+    padding: var(--padding);    
   }
   
   /* Background color for the table */
@@ -66,7 +62,15 @@
   }
   
   /* Styling for the first list item */
-  ul li:first-child {
+  ul li:nth-child(1){
+    color: var(--first-li-color);
+    font-weight: bold;
+  }
+  ul li:nth-child(3){
+    color: var(--last-row-bg);
+    font-weight: bold;
+  }
+  ul li:nth-child(5){
     color: var(--first-li-color);
     font-weight: bold;
   }
