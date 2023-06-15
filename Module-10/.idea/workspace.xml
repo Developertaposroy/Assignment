@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97e4a13d-53da-4fff-b1b3-0e7d1a603712" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module-6/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module-6/.idea/Module-6.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module-6/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module-6/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module-6/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module-6/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module-6/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module-6/package.json" beforeDir="false" />
-    </list>
+    <list default="true" id="97e4a13d-53da-4fff-b1b3-0e7d1a603712" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +49,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686284234708</updated>
-      <workItem from="1686284239091" duration="1449000" />
+      <workItem from="1686284239091" duration="1905000" />
     </task>
     <servers />
   </component>

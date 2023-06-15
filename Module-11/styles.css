@@ -1,0 +1,121 @@
+
+
+
+  :root {
+    --main-color: blue;
+    --container-bg: lightgray;
+    --table-bg: white;
+    --table-border-color: black;
+    --hover-bg: lightblue;
+    --first-li-color: red;
+    --image-width: 250px;
+    --image-height: 150px;
+    --first-column-bg: lightyellow;
+    --last-row-bg: lightgreen;
+    --header-bg: darkgray;
+    --header-color: white;
+    --header-font-weight: bold;
+    --margin: 10px;
+    --padding: 10px;
+    --border-width: 1px;
+    --box-shadow:5px 10px #888888;
+
+  
+  }
+  
+  /* Custom font for all text */
+  body {
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Styling for the heading */
+  h1 {
+    color: var(--main-color);
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* Background color for the container div */
+ 
+  
+  .container {
+    background-color: var(--container-bg);
+    width: 500px;
+    margin: auto;
+    padding: var(--padding);
+    background-color: #ddd;
+    
+  }
+  
+  /* Background color for the table */
+  table {
+    background-color: var(--table-bg);
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Border around table cells */
+  table td {
+    border: var(--border-width) solid var(--table-border-color);
+    padding: var(--padding);
+  }
+  
+  /* Hover effect for table rows */
+  table tbody tr:hover {
+    background-color: var(--hover-bg);
+  }
+  
+  /* Styling for the first list item */
+  ul li:first-child {
+    color: var(--first-li-color);
+    font-weight: bold;
+  }
+  
+  /* Styling for the image */
+  img {
+    width: var(--image-width);
+    height: var(--image-height);
+    margin: var(--margin);
+  }
+  
+  /* Styling for specific table cells */
+  table tbody tr:first-child td {
+    background-color: var(--first-column-bg);
+  }
+  
+  table tbody tr:last-child td {
+    background-color: var(--last-row-bg);
+  }
+  
+  /* Styling for the table header row */
+  table thead th {
+    background-color: var(--header-bg);
+    color: var(--header-color);
+    font-weight: var(--header-font-weight);
+    padding: var(--padding);
+  }
+  
+  /* Styles for links */
+  a {
+    color: var(--main-color);
+    text-decoration: none;
+  }
+  
+  /* Styles for hovered links */
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styles for clicked links */
+  a:active {
+    color: red;
+  }
+  
+  /* Pseudo-element for adding decorative content */
+  .container::before {
+    content: "Decorative Content";
+    display: block;
+    background-color: lightyellow;
+    padding: var(--padding);
+    margin-bottom: var(--margin);
+  }
