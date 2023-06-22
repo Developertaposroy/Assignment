@@ -1,30 +1,334 @@
-/* Light mode styles */
-body.light {
-    background-color: #f0f0f0;
-    color: #333;
+body,h1,h2,h3,h4,h5,h6,span,a{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+/* ................ */
+body.dark-mode {
+    background-color: #251f1f;
+    color: #ffffff;
+  }
+  .form-switch {
+    color: white;
+    margin: 10px;
   }
   
-  header.light {
-    background-color: #ccc;
-    color: #333;
+  /*Dark mode messages*/
+  .message {
+    color: white;
+    background: #0a9faa;
+    padding: 1rem 1rem;
+    position: fixed;
+    z-index: 10;
+    right: -100%;
+    bottom: 5%;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    border: none;
+  }
+  .message.active {
+    right: 3%;
   }
   
-  #content.light {
+  /*Navbar styles starts*/
+  
+  .navbar {
+    background: #2e4f80;
+  }
+  .navbar-brand {
+    color: white;
+    font-size: 1.7rem;
+  }
+  .nav-item {
+    margin-left: 0.3rem;
+  }
+  .nav-item .nav-link {
+    color: white !important;
+  }
+  .nav-item a.active {
+    color: #5b7cad !important;
+  }
+  .nav-link:hover {
+    color: #5b7cad !important;
+    transition: 0.2s;
+  }
+  
+  .navbar-toggler-icon {
+    border-color: white;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu {
+    width: 15rem;
+    height: 19rem;
+  }
+  .dropdown-item {
+    padding: 1rem;
+  }
+
+
+/* ............. */
+
+
+
+/* Header Style */
+/* .jon-header .navbar-brand {
+	font-size: 25px;
+	font-weight: 500;
+}
+.jon-header span {
+	display: inline-block;
+	background: #6278df;
+	color: #fff;
+	height: 43px;
+	width: 40px;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 28px;
+	position: relative;
+	top: 3px;
+}
+.jon-menu .nav-link {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+} */
+
+/* Slider Section */
+.slider-section{
+    background: url(https://i.ibb.co/r0JphkC/mbr-10.jpg) no-repeat center center;
+    padding: 200px 0;
+    position: relative;
+    z-index: 1;
+}
+.slider-section::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.slider-caption h4 {
+    margin-bottom: 35px;
+}
+.slider-caption h2 {
+    margin-bottom: 50px;
+    font-size: 46px;
+}
+
+.slider-caption .btn {
+    background: #5ba533;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.slider-caption .form-control {
+    padding: 18px 20px;
+}
+.btn-block{
+    transition: .5s;
+    padding: 20px 10px;
+}
+.btn-block:hover {
+	box-shadow: 0px 5px 21px 1px #6278DF;
+	border: 2px solid #667DEA;
     background-color: #fff;
-  }
-  
-  /* Dark mode styles */
-  body.dark {
-    background-color: #1e1c1c;
-    color: #f0f0f0;
-  }
-  
-  header.dark {
-    background-color: #666;
-    color: #f0f0f0;
-  }
-  
-  #content.dark {
-    background-color: #222;
-  }
-  
+    color:#667DEA ;
+}
+/*  Abput Section  */
+
+.about-text-left{
+    margin-top: 120px;
+}
+.about-text-left .lead {
+    font-size: 25px;
+    line-height: 2.7rem;
+}
+.h2 {
+	font-size: 45px;
+}
+/*  Feature Section css */
+.feature-item {
+    height: 300px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+}
+.left-img-sec {
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.left-test-sec {
+    width: 60%;
+    padding: 25px;
+}
+
+.left-img-sec img {
+    height: 100%;
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    left: -80px;
+}
+
+/*  Portolio Hover Css  */
+.portfolio-item{}
+.portfolio-item a{
+    position: relative;
+    display: block;
+}
+.portfolio-item a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(98, 120, 223,.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+
+.portfolio-item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/* Pricing table */
+.pricing-item{
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+    border-radius: 5px;
+}
+.pricing-item h1{}
+.pricing-item h5{}
+.pricing-item ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 45px;
+}
+.pricing-item ul li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #777;
+}
+.pricing-item ul li span {
+    color: #657be0;
+    font-size: 25px;
+    font-weight: bold;
+    width: 40px;
+    display: inline-block;
+}
+
+
+.pricing-item-button{}
+.pricing-item-button a {
+	border-color: #657be0;
+	border-width: 2px;
+	color: #657be0;
+	padding: 14px 30px;
+	font-size: 22px;
+	box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+	border: none;
+
+}
+ .button-item:hover{
+    background-color: #000;
+    color: #fff;
+    z-index: 1;
+ 
+}
+.pricing-item:hover .pricing-item-button a {
+    background-color: #6278DF;
+    color: #fff;
+    z-index: -1;
+}
+/*  testimonial section  */
+.author-info {
+    width: 220px;
+    margin: auto;
+}
+.author-info img {
+    width: 85px;
+    margin-right: 18px;
+}
+.user-details {
+    text-align: left;
+    position: relative;
+    top: 10px;
+}
+.fas.fa-quote-left {
+	font-size: 75px;
+	opacity: 25%;
+	margin-top: -42px;
+	margin-bottom: 26px;
+}
+
+/*  About Section  */
+.about-item {
+    margin-top: 90px;
+}
+.about-item .card{}
+.about-item .card img {
+    width: 130px;
+    height: auto;
+    margin-top: -70px;
+    margin-left: 15px;
+}
+
+/*  Conent Us CSS  */
+.contnt-form-div .card{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+    padding: 40px;
+}
+
+.btn.btn-info.btn-outline-light.btn-lg.border-hover:hover {
+	box-shadow: 0px 5px 21px 1px #6278DF;
+	border: 2px solid #667DEA;
+}
+
+
+/* Android */
+
+.health{
+
+}
+.btn-title {
+	border: 3px solid #5BA533;
+	background: #fff;
+	color: #5BA533;
+	padding: 10px 15px;
+	font-size: 20px;
+	font-weight: 700;
+	border-radius: 5px;
+}
+.btn-title:hover{
+    background-color:#5BA533 ;
+    color: #fff;
+}
+
+.btn-title2{
+    	border: 3px solid;
+	background: #5BA533;
+	color: #fff;
+	padding: 12px 12px;
+	font-size: 20px;
+	font-weight: 700;
+	border-radius: 10px;
+}
+
+.btn-title2:hover{
+    background-color:#000;
+    color: #fff;
+    border-radius: 10px;
+}
