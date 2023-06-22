@@ -1,0 +1,30 @@
+/* Light mode styles */
+body.light {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  header.light {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  #content.light {
+    background-color: #fff;
+  }
+  
+  /* Dark mode styles */
+  body.dark {
+    background-color: #1e1c1c;
+    color: #f0f0f0;
+  }
+  
+  header.dark {
+    background-color: #666;
+    color: #f0f0f0;
+  }
+  
+  #content.dark {
+    background-color: #222;
+  }
+  
